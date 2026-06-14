@@ -1,2 +1,2 @@
 # Gaming-predictive-modelling
-Predictive modelling of player churn for EA Sports games
+Built an end-to-end churn prediction pipeline on multi-season FC player card data. Engineered churn proxy labels from rating decay and market value collapse, segmented player archetypes via KMeans clustering, and trained an XGBoost classifier (with SHAP explainability) to identify disengagement risk — informing hypothetical live-ops intervention strategies for a 30M+ user economy.
