@@ -59,14 +59,14 @@ A revealing check: archetypes built on *historical* features showed only a ~2-po
 ### 3. Pre-Game Predictive Model ([notebook 04](notebooks/04_match_prediction.ipynb))
 XGBoost trained on pre-game features only (historical behavior + role + archetype). Result: **50% accuracy, AUC 0.508** — essentially chance.
 
-![Pre-game SHAP](outputs/shap_pregame_importance.png)
+![Pre-game SHAP](outputs/04_shap_pregame_importance.png)
 
 *Even the most influential pre-game feature shifts win probability by only ~3.5%.*
 
 ### 4. Explanatory Model ([notebook 05](notebooks/05_explanatory_analysis.ipynb))
 A second model using *in-game* behavioral features to answer a descriptive question: **which behaviors distinguish wins from losses?** Logistic regression (AUC 0.873) and XGBoost (AUC 0.884) performed nearly identically — indicating a largely linear relationship.
 
-![Explanatory SHAP](outputs/shap_explanatory_importance.png)
+![Explanatory SHAP](outputs/05_shap_explanatory_importance.png)
 
 *The same features now shift predictions by up to 1.42 — ~40x the pre-game effect.*
 
